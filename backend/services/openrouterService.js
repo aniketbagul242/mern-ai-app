@@ -11,7 +11,7 @@ export const getAIResponse = async (prompt) => {
       },
       {
         headers: {
-          Authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`, // ✅ FIXED
+          Authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`, 
           "Content-Type": "application/json"
         }
       }

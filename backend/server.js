@@ -5,7 +5,6 @@ import dotenv from "dotenv";
 import connectDB from "./config/db.js";
 import aiRouter from "./routes/aiRoutes.js";
 import saveRouter from "./routes/saveRoutes.js";
-import { getAIResponse } from "./services/openrouterService.js";
 
 dotenv.config();
 
@@ -27,14 +26,6 @@ app.get("/", (req, res)=>{
   res.json("working")
 })
 
-app.get("/test-ai", async (req, res) => {
-  try {
-    const result = await getAIResponse("Hello world");
-    res.json({ result });
-  } catch (err) {
-    res.json({ error: err.message });
-  }
-});
 
 // Server start
 app.listen(PORT, () => {
