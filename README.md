@@ -3,6 +3,8 @@
 ## Overview
 This is a simple MERN application that demonstrates connecting multiple technologies:
 
+Live Demo - https://mern-ai-app.vercel.app/
+
 - **MongoDB**: Stores prompts and AI responses.
 - **Express.js & Node.js**: Backend API server.
 - **React**: Frontend UI.
@@ -34,7 +36,7 @@ The app allows users to type a message in the input node, click **Run Flow**, vi
 
 ### 1. Clone the repository
 ```bash
-git clone <your-github-repo-link>
+git clone https://github.com/aniketbagul242/mern-ai-app
 cd <repo-folder>
 
 2. Backend Setup
