@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:3000/api",
+  baseURL: "https://mern-app-backend-9rq8.onrender.com/api",
 });
 
 export const askAI = async (prompt) => {
